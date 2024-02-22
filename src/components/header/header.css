@@ -14,11 +14,42 @@
   color: #fff;
   padding: 20px 0;
   overflow: hidden;
-  background-image: url("../../assets/sole/Logistics.jpg");
-  background-size: cover; /* Change to 'contain' or 'cover' as needed */
-  background-position: center;
 
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  animation: slide 15s linear infinite;
+  z-index: 0;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url("../../assets/sole/Logistics.jpg");
+  }
+
+  10% {
+    background-image: url("../../assets/sole/Logistics.jpg");
+  }
+
+  43% {
+    background-image: url("../../assets/sole/137706535_2832897623702809_3799256577048642001_n.jpg");
+  }
+  66% {
+    background-image: url("../../assets/sole/198714229_2942825642710006_3443354245656635815_n.jpg");
+  }
+  100% {
+    background-image: url("../../assets/sole/292435275_3234318383560729_6332790117099571211_n.jpg");
+  }
 }
 
 .container {

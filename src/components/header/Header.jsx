@@ -6,7 +6,7 @@ import CompanyLogo from "../../assets/logo.jpg";
 const Header = () => {
   return (
     <header className="header">
-      <div className="container">
+      <div className="container ">
         <nav className="navbar">
           <Link to="/" className="logo">
             <img src={CompanyLogo} alt="" />
