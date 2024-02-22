@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isHoveredAbout, setIsHoveredAbout] = useState(false);
   const [active, setActive] = useState(false);
 
   const openModal = () => {
@@ -34,7 +35,9 @@ const Header = () => {
               onMouseLeave={() => setIsHovered(false)}>
               <Link to='/services'>Services</Link>
             </li>
-            <li>
+            <li
+              onMouseEnter={() => setIsHoveredAbout(true)}
+              onMouseLeave={() => setIsHoveredAbout(false)}>
               <Link to='/about'>About Us</Link>
             </li>
             <li>
@@ -56,6 +59,20 @@ const Header = () => {
           </Link>
           <Link className='link-style' to='/blog'>
             <li>შიდა</li>
+          </Link>
+        </ul>
+      )}
+
+      {isHoveredAbout && (
+        <ul
+          className='optionalAbout'
+          onMouseEnter={() => setIsHoveredAbout(true)}
+          onMouseLeave={() => setIsHoveredAbout(false)}>
+          <Link className='link-style' to='/aboutUs'>
+            <li>ისტორია </li>
+          </Link>
+          <Link className='link-style' to='/blog'>
+            <li>პარტნიორები</li>
           </Link>
         </ul>
       )}
