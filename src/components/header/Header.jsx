@@ -10,7 +10,11 @@ const Header = () => {
         <nav className="navbar">
           <Link to="/" className="logo">
             <img src={CompanyLogo} alt="" />
+            <span className="logoSpan">OLE-TRANS</span>
           </Link>
+          <h1 className="sole">
+            <i class="fa-solid fa-truck"></i>
+          </h1>
           <ul className="nav-menu">
             <li>
               <Link to="/services">Services</Link>

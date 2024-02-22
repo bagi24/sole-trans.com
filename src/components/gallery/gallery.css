@@ -1,0 +1,27 @@
+.gallery-container {
+  overflow-x: auto;
+  padding: 20px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.gallery {
+  display: inline-flex;
+}
+
+.gallery img {
+  width: 350px;
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:last-child {
+  margin-right: 0;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}

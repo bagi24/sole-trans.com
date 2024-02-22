@@ -2,8 +2,8 @@ import React from "react";
 import Header from "../src/components/header/Header";
 import Footer from "../src/components/footer/Footer";
 import Services from "../src/components/services/Services";
-import About from "../src/components/about/About";
-import Contact from "../src/components/contact/Contact";
+import Gallery from "../src/components/gallery/Gallery";
+import AditionalService from "./components/aditionalService/AditionalService";
 
 const App = () => {
   return (
@@ -11,8 +11,8 @@ const App = () => {
       <Header />
       <main>
         <Services />
-        <About />
-        <Contact />
+        <AditionalService />
+        <Gallery />
       </main>
       <Footer />
     </div>

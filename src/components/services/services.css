@@ -1,0 +1,112 @@
+/* Container styling */
+#services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #01293f;
+}
+
+/* Individual service item styling */
+.service {
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgb(0, 208, 255);
+  cursor: pointer;
+}
+
+/* Additional hover effect */
+.service:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 41, 155, 0.099);
+  transition: background-color 0.9s ease;
+}
+
+.service:hover::after {
+  content: "\A";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: translate(-50%, -50%);
+  transition: background 0.3s ease;
+}
+
+/* Service icon styling */
+.service-icon {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.service-icon img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Adjust size as needed */
+  border: 4px solid rgb(0, 208, 255);
+}
+
+/* Service details styling */
+.service-details {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.service-details h3 {
+  color: black;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service-details p {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* Hover effect */
+.service:hover {
+  transform: translateY(-5px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to service items */
+.service {
+  animation: fadeIn 0.5s ease forwards;
+}

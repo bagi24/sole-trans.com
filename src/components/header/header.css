@@ -5,28 +5,53 @@
 }
 
 .header {
-  background: linear-gradient(135deg, #2980b9, #2c3e50);
+  width: 100%;
+  height: 500px;
+  background: #01293f;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   color: #fff;
   padding: 20px 0;
+  overflow: hidden;
+  background-image: url("../../assets/sole/Logistics.jpg");
+  background-size: cover; /* Change to 'contain' or 'cover' as needed */
+  background-position: center;
+
+  background-repeat: no-repeat;
 }
 
 .container {
-  max-width: 1200px;
+  position: absolute;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  background-color: #01293f;
+  opacity: 0.8;
+  top: 0;
+
+  border-bottom-left-radius: 40px;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 .logo {
   text-decoration: none;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  width: 500px;
+}
+
+.logoSpan {
+  font-size: 50px;
+  color: #fff;
+  margin-left: 7px;
 }
 
 .logo:hover {
@@ -34,12 +59,37 @@
 }
 
 .logo img {
-  width: 100px;
+  width: 80px;
   height: auto;
   border-radius: 50%;
   animation: pulse 2s ease-in-out infinite;
-  animation: moveLeftToRight 4s linear infinite alternate;
+  /* animation: moveLeftToRight 4s linear infinite alternate; */
+  border: 4px solid rgb(0, 208, 255);
+  box-shadow: 0 3px 20px rgb(253, 253, 253);
 }
+
+.sole {
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(251, 251, 251);
+  display: flex;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 0px 0px;
+}
+
+.sole:hover {
+  transform: scale(1.1);
+}
+
+.fa-truck {
+  display: flex;
+  width: 500px;
+  margin-left: 10px;
+  color: #e7cf67;
+
+  animation: moveLeftToRight 3s linear infinite alternate;
+}
+
 @keyframes moveLeftToRight {
   0% {
     transform: translateX(0);
@@ -67,7 +117,7 @@
 }
 
 .nav-menu li {
-  margin-left: 20px;
+  margin-left: 50px;
   position: relative;
 }
 
@@ -76,6 +126,7 @@
   color: #fff;
   transition: color 0.3s ease;
   position: relative;
+  font-size: 20px;
 }
 
 .nav-menu li a::before {
@@ -95,7 +146,7 @@
 }
 
 .nav-menu li a:hover {
-  color: #ffd700;
+  color: #e7cf67;
 }
 
 .logo img:hover {
@@ -132,11 +183,7 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  transition: background-color 0.3s ease;
-}
-
-.dropdown-content a:hover {
-  background-color: #3498db;
+  transition: background-color 0.4s ease;
 }
 
 .nav-menu li:hover .dropdown-content {
