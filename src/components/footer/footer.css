@@ -25,11 +25,10 @@ footer p {
   border-radius: 50%;
   cursor: pointer;
   color: #e7cf67;
-  box-shadow: 0 5px 7px 10px rgb(255, 255, 255);
 }
 
 .fa-brands:hover {
-  color: white;
+  color: rgb(0, 208, 255);
 }
 
 footer p {

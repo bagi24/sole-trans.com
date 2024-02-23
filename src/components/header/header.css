@@ -19,7 +19,7 @@
 }
 
 .header::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -34,21 +34,21 @@
 
 @keyframes slide {
   0% {
-    background-image: url('../../assets/sole/Logistics.jpg');
+    background-image: url("../../assets/sole/Logistics.jpg");
   }
 
   10% {
-    background-image: url('../../assets/sole/Logistics.jpg');
+    background-image: url("../../assets/sole/Logistics.jpg");
   }
 
   43% {
-    background-image: url('../../assets/sole/137706535_2832897623702809_3799256577048642001_n.jpg');
+    background-image: url("../../assets/sole/137706535_2832897623702809_3799256577048642001_n.jpg");
   }
   66% {
-    background-image: url('../../assets/sole/198714229_2942825642710006_3443354245656635815_n.jpg');
+    background-image: url("../../assets/sole/198714229_2942825642710006_3443354245656635815_n.jpg");
   }
   100% {
-    background-image: url('../../assets/sole/292435275_3234318383560729_6332790117099571211_n.jpg');
+    background-image: url("../../assets/sole/292435275_3234318383560729_6332790117099571211_n.jpg");
   }
 }
 
@@ -106,6 +106,8 @@
   display: flex;
   transition: transform 0.3s ease;
   box-shadow: 0 5px 0px 0px;
+
+  margin-right: 70px;
 }
 
 .sole:hover {
@@ -148,7 +150,7 @@
 }
 
 .nav-menu li {
-  margin-left: 50px;
+  margin-left: 30px;
   position: relative;
 }
 
@@ -161,7 +163,7 @@
 }
 
 .nav-menu li a::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -237,7 +239,7 @@
   background-color: #ffffff;
   border-radius: 0.5rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  left: 71rem;
+  left: 68rem;
   top: 2.5rem;
   list-style-type: none;
   opacity: 0.7;
@@ -265,7 +267,39 @@
   background-color: #ffffff;
   border-radius: 0.5rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  left: 79rem;
+  left: 75rem;
+  top: 2.5rem;
+  list-style-type: none;
+  opacity: 0.7;
+}
+
+.GeFlag {
+  width: 25px;
+  border-radius: 50%;
+}
+
+.flag {
+  width: 25px;
+  height: 25px;
+}
+
+.flag:hover {
+  border: 2px solid rgb(0, 208, 255);
+}
+
+.optionalFlag {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  left: 88.2rem;
   top: 2.5rem;
   list-style-type: none;
   opacity: 0.7;
