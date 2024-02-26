@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
@@ -8,9 +9,16 @@ const Footer = () => {
       </div>
 
       <div className="soc-media">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <a href="https://www.facebook.com/soletrans">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
       </div>
 
       <div className="adress">
@@ -20,8 +28,13 @@ const Footer = () => {
         </div>
 
         <div className="items">
-          <i class="fa-solid fa-location-dot"></i>
-          <p>თბილისი, მოსკოვის გამზირი</p>
+          <a
+            style={{ display: "flex", textDecoration: "none", gap: "10px" }}
+            href="https://maps.app.goo.gl/gAUkqo5RyfEzeTjY6"
+          >
+            <i class="fa-solid fa-location-dot"></i>
+            <p className="address-p">თბილისი, მოსკოვის გამზირი</p>
+          </a>
         </div>
 
         <div className="items">

@@ -66,14 +66,17 @@ const Header = () => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <Link className="link-style" to="/aboutUs">
+          <Link className="link-style" to="/services/international">
             <li>საერთაშორისო </li>
           </Link>
-          <Link className="link-style" to="/blog">
+          <Link className="link-style" to="/services/terrestrial">
             <li>სახმელეთო</li>
           </Link>
-          <Link className="link-style" to="/blog">
+          <Link className="link-style" to="/services/internal">
             <li>შიდა</li>
+          </Link>
+          <Link className="link-style" to="/services/broker">
+            <li>საბროკერო</li>
           </Link>
         </ul>
       )}
@@ -84,10 +87,10 @@ const Header = () => {
           onMouseEnter={() => setIsHoveredAbout(true)}
           onMouseLeave={() => setIsHoveredAbout(false)}
         >
-          <Link className="link-style" to="/aboutUs">
+          <Link className="link-style" to="/aboutUs/history">
             <li>ისტორია </li>
           </Link>
-          <Link className="link-style" to="/blog">
+          <Link className="link-style" to="/aboutUs/partners">
             <li>პარტნიორები</li>
           </Link>
         </ul>

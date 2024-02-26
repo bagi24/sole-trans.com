@@ -65,3 +65,7 @@ footer p {
   font-size: 20px;
   color: #e7cf67;
 }
+
+.address-p:hover {
+  color: rgb(0, 208, 255);
+}
