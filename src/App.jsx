@@ -3,12 +3,12 @@ import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import Services from "./pages/Services";
-import International from "./pages/services/International";
-import Internal from "./pages/services/Internal";
-import Terrestrial from "./pages/services/Terrestrial";
+import International from "./pages/services/International/International";
+import Internal from "./pages/services/internal/Internal";
+import Terrestrial from "./pages/services/ground/Terrestrial";
 import History from "./pages/about/History";
 import Partners from "./pages/about/Partners";
-import Brokerage from "./pages/services/Brokerage";
+import Brokerage from "./pages/services/brokerage/Brokerage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {

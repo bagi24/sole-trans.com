@@ -3,17 +3,14 @@ import "./header.css";
 import { Link } from "react-router-dom";
 import CompanyLogo from "../../assets/logo.jpg";
 import { useState } from "react";
-import GeFlag from "../../assets/sole/GE-Georgia-Flag-icon.png";
-import EnFlag from "../../assets/sole/EN-English.jpg";
-import RuFlag from "../../assets/sole/RU-Russia.png";
 
 import { useLanguage } from "../../pages/HomePage";
 
 const Header = ({ onLanguageChange }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isHoveredAbout, setIsHoveredAbout] = useState(false);
-  const [isHoveredFlag, setIsHoveredFlag] = useState(false);
-  const [active, setActive] = useState(false);
+  // const [isHoveredFlag, setIsHoveredFlag] = useState(false);
+  // const [active, setActive] = useState(false);
 
   const { language, languages } = useLanguage();
 
@@ -46,16 +43,21 @@ const Header = ({ onLanguageChange }) => {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <Link to="/services"> {languages[language].Services} </Link>
+              <Link to="/services">
+                {" "}
+                {languages[language].navigation.Services}
+              </Link>
             </li>
             <li
               onMouseEnter={() => setIsHoveredAbout(true)}
               onMouseLeave={() => setIsHoveredAbout(false)}
             >
-              <Link to="/about"> {languages[language].About}</Link>
+              <Link to="/about"> {languages[language].navigation.About}</Link>
             </li>
             <li>
-              <Link to="/contact">{languages[language].Contact}</Link>
+              <Link to="/contact">
+                {languages[language].navigation.Contact}
+              </Link>
             </li>
             {/* <li
               onMouseEnter={() => setIsHoveredFlag(true)}
@@ -85,16 +87,16 @@ const Header = ({ onLanguageChange }) => {
           onMouseLeave={() => setIsHovered(false)}
         >
           <Link className="link-style" to="/services/international">
-            <li>{languages[language].International}</li>
+            <li>{languages[language].navigation.International}</li>
           </Link>
           <Link className="link-style" to="/services/terrestrial">
-            <li>{languages[language].Ground}</li>
+            <li>{languages[language].navigation.Ground}</li>
           </Link>
           <Link className="link-style" to="/services/internal">
-            <li>{languages[language].Internal}</li>
+            <li>{languages[language].navigation.Internal}</li>
           </Link>
           <Link className="link-style" to="/services/broker">
-            <li>{languages[language].Brokerage}</li>
+            <li>{languages[language].navigation.Brokerage}</li>
           </Link>
         </ul>
       )}
@@ -106,10 +108,10 @@ const Header = ({ onLanguageChange }) => {
           onMouseLeave={() => setIsHoveredAbout(false)}
         >
           <Link className="link-style" to="/aboutUs/history">
-            <li>{languages[language].History} </li>
+            <li>{languages[language].navigation.History} </li>
           </Link>
           <Link className="link-style" to="/aboutUs/partners">
-            <li>{languages[language].Partners}</li>
+            <li>{languages[language].navigation.Partners}</li>
           </Link>
         </ul>
       )}
