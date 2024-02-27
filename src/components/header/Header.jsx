@@ -7,19 +7,27 @@ import GeFlag from "../../assets/sole/GE-Georgia-Flag-icon.png";
 import EnFlag from "../../assets/sole/EN-English.jpg";
 import RuFlag from "../../assets/sole/RU-Russia.png";
 
-const Header = () => {
+import { useLanguage } from "../../pages/HomePage";
+
+const Header = ({ onLanguageChange }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isHoveredAbout, setIsHoveredAbout] = useState(false);
   const [isHoveredFlag, setIsHoveredFlag] = useState(false);
   const [active, setActive] = useState(false);
 
-  const openModal = () => {
-    setActive(true);
+  const { language, languages } = useLanguage();
+
+  const handleChange = (e) => {
+    onLanguageChange(e.target.value);
   };
 
-  const closeModal = () => {
-    setActive(false);
-  };
+  // const openModal = () => {
+  //   setActive(true);
+  // };
+
+  // const closeModal = () => {
+  //   setActive(false);
+  // };
 
   return (
     <header className="header">
@@ -38,24 +46,34 @@ const Header = () => {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <Link to="/services">Services</Link>
+              <Link to="/services"> {languages[language].Services} </Link>
             </li>
             <li
               onMouseEnter={() => setIsHoveredAbout(true)}
               onMouseLeave={() => setIsHoveredAbout(false)}
             >
-              <Link to="/about">About Us</Link>
+              <Link to="/about"> {languages[language].About}</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact">{languages[language].Contact}</Link>
             </li>
-            <li
+            {/* <li
               onMouseEnter={() => setIsHoveredFlag(true)}
               onMouseLeave={() => setIsHoveredFlag(false)}
             >
-              <Link to="/en">
+              <Link to="/Ge">
                 <img className="GeFlag" src={GeFlag} alt="" />
               </Link>
+            </li> */}
+            <li class="custom-select">
+              <select
+                id="languageSelect"
+                value={language}
+                onChange={handleChange}
+              >
+                <option value="ru">RU </option>
+                <option value="en">EN</option>
+              </select>
             </li>
           </ul>
         </nav>
@@ -67,16 +85,16 @@ const Header = () => {
           onMouseLeave={() => setIsHovered(false)}
         >
           <Link className="link-style" to="/services/international">
-            <li>საერთაშორისო </li>
+            <li>{languages[language].International}</li>
           </Link>
           <Link className="link-style" to="/services/terrestrial">
-            <li>სახმელეთო</li>
+            <li>{languages[language].Ground}</li>
           </Link>
           <Link className="link-style" to="/services/internal">
-            <li>შიდა</li>
+            <li>{languages[language].Internal}</li>
           </Link>
           <Link className="link-style" to="/services/broker">
-            <li>საბროკერო</li>
+            <li>{languages[language].Brokerage}</li>
           </Link>
         </ul>
       )}
@@ -88,32 +106,32 @@ const Header = () => {
           onMouseLeave={() => setIsHoveredAbout(false)}
         >
           <Link className="link-style" to="/aboutUs/history">
-            <li>ისტორია </li>
+            <li>{languages[language].History} </li>
           </Link>
           <Link className="link-style" to="/aboutUs/partners">
-            <li>პარტნიორები</li>
+            <li>{languages[language].Partners}</li>
           </Link>
         </ul>
       )}
 
-      {isHoveredFlag && (
+      {/* {isHoveredFlag && (
         <ul
           className="optionalFlag"
           onMouseEnter={() => setIsHoveredFlag(true)}
           onMouseLeave={() => setIsHoveredFlag(false)}
         >
-          <Link className="link-style" to="/blog">
+          <Link className="link-style" to="/En">
             <li>
               <img className="flag" src={EnFlag} alt="" />
             </li>
           </Link>
-          <Link className="link-style" to="/blog">
+          <Link className="link-style" to="/Ru">
             <li>
               <img className="flag" src={RuFlag} alt="" />
             </li>
           </Link>
         </ul>
-      )}
+      )} */}
     </header>
   );
 };
