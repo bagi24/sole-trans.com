@@ -119,17 +119,38 @@
   width: 500px;
   margin-left: 10px;
   color: #e7cf67;
-
-  animation: moveLeftToRight 3s linear infinite alternate;
+  position: relative;
 }
 
-@keyframes moveLeftToRight {
+@keyframes moveRightToLeft {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(50%);
+    opacity: 1;
   }
   100% {
-    transform: translateX(calc(100% - 50px));
+    transform: translateX(85%);
+    opacity: 1;
   }
+}
+
+/* Apply animation */
+.fa-truck {
+  animation: moveRightToLeft 6s linear infinite;
+}
+
+/* Delay animation for each truck */
+.fa-truck:nth-child(1) {
+  animation-delay: 0s;
+}
+.fa-truck:nth-child(2) {
+  animation-delay: -4s;
+}
+.fa-truck:nth-child(3) {
+  animation-delay: -2s;
 }
 
 @keyframes pulse {
@@ -303,4 +324,40 @@
   top: 2.5rem;
   list-style-type: none;
   opacity: 0.7;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .nav-menu li {
+    margin-bottom: 15px;
+  }
+
+  .custom-select {
+    margin-top: 20px;
+  }
+
+  .optional,
+  .optionalAbout {
+    position: static;
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .optional li {
+    margin-bottom: 10px;
+  }
 }
