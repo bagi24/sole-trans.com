@@ -18,7 +18,7 @@ export const languages = {
       About: "ჩვენზე",
       Contact: "კონტაქტი",
       International: "საერთაშორისო",
-      Shipping: "დაცლა-დატვირთვა",
+      Shipping: "დატვირთვა",
       Internal: "შიდა",
       Brokerage: "საბროკერო",
       History: "ისტორია",

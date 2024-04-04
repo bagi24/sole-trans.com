@@ -69,3 +69,18 @@ footer p {
 .address-p:hover {
   color: rgb(0, 208, 255);
 }
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .soc-media {
+    margin-top: 20px;
+  }
+
+  .fa-brands {
+    font-size: 25px;
+  }
+}

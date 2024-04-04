@@ -26,6 +26,20 @@ const Header = ({ onLanguageChange }) => {
   //   setActive(false);
   // };
 
+  window.addEventListener("scroll", function () {
+    let container = document.querySelector(".container");
+    let scrollPos = window.scrollY;
+
+    // Check if user has scrolled
+    if (scrollPos > 0) {
+      // If scrolled, set opacity to 1
+      container.style.opacity = "1";
+    } else {
+      // If at the top, set opacity back to 0.8
+      container.style.opacity = "0.8";
+    }
+  });
+
   return (
     <header className="header">
       <div className="container ">
@@ -43,16 +57,13 @@ const Header = ({ onLanguageChange }) => {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <Link to="/services">
-                {" "}
-                {languages[language].navigation.Services}
-              </Link>
+              <Link to="/"> {languages[language].navigation.Services}</Link>
             </li>
             <li
               onMouseEnter={() => setIsHoveredAbout(true)}
               onMouseLeave={() => setIsHoveredAbout(false)}
             >
-              <Link to="/about"> {languages[language].navigation.About}</Link>
+              <Link to="/"> {languages[language].navigation.About}</Link>
             </li>
             <li>
               <Link to="/contact">
