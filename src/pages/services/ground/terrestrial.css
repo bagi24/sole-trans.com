@@ -1,64 +1,69 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
-  margin: 0;
-  padding: 0;
+:root {
+  --primary-color: #333;
+  --secondary-color: #666;
+  --accent-color: #ff5733;
+  --spacing: 20px;
 }
 
-/* Section styling */
+/* Styling the section */
 .section {
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Title styling */
+/* Styling the title */
 .title {
-  font-size: 24px;
-  color: #333333;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
 }
 
-/* Description styling */
+/* Styling the description */
 .description {
-  font-size: 16px;
-  color: #666666;
+  font-size: 1rem;
+  color: var(--secondary-color);
   line-height: 1.6;
+  width: 100%;
 }
 
-/* List styling */
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-/* List item styling */
+/* Styling the list items */
 .li {
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 8px;
-  color: #555555;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
-/* List item bullet styling */
-.li::before {
+/* Styling list item bullets */
+.li:before {
   content: "•";
-  position: absolute;
-  left: 0;
-
-  color: #007bff;
-  transition: color 0.3s ease-in-out;
+  margin-right: 0.5rem;
+  color: var(--accent-color);
 }
 
-/* Change bullet color on hover */
-.li:hover::before {
-  color: #ff5733;
+/* Animation effect on list items */
+.li {
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on list items */
+.li:hover {
+  transform: translateX(5px);
+}
+
+/* Additional styling */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.p2c {
+  display: flex;
 }

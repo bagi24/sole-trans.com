@@ -7,6 +7,9 @@ import photo5 from "../../assets/sole/258342550_3064412437217992_464225982452235
 import photo6 from "../../assets/sole/new.jpg";
 import photo7 from "../../assets/sole/all.jpg";
 import photo8 from "../../assets/sole/aaa.jpg";
+import photo9 from "../../assets/sole/600.jpg";
+import photo10 from "../../assets/sole/444-2.jpg";
+import photo11 from "../../assets/sole/55555.jpg";
 
 const Gallery = () => {
   return (
@@ -23,6 +26,9 @@ const Gallery = () => {
         <img src={photo6} />
         <img src={photo7} />
         <img src={photo8} />
+        <img src={photo9} />
+        <img src={photo10} />
+        <img src={photo11} />
       </div>
     </div>
   );

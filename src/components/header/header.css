@@ -251,7 +251,7 @@
 }
 
 .optional {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -280,7 +280,7 @@
 }
 
 .optionalAbout {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
