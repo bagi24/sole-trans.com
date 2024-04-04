@@ -39,12 +39,12 @@ const Footer = () => {
 
         <div className="items">
           <i class="fa-solid fa-mobile-retro"></i>
-          <p>577245435</p>
+          <p>+995 599 986686</p>
         </div>
 
         <div className="items">
           <i class="fa-solid fa-envelope"></i>
-          <p>sole-trans@gmail.com</p>
+          <p>soletrans@yahoo.com</p>
         </div>
       </div>
     </footer>

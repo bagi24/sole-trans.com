@@ -1,7 +1,9 @@
 import React from "react";
 import "./aditionalService.css";
-import ServicePhoto from "../../assets/sole/servise.jpg";
+import ServicePhoto from "../../assets/shida gadazidva.jpg";
 import { useEffect, useState } from "react";
+
+import Partner from "../../pages/partners/partner.js";
 
 const AditionalService = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +30,7 @@ const AditionalService = () => {
 
   return (
     <div className={`services ${isVisible ? "visible" : ""}`}>
-      <img className="servImg" src={ServicePhoto} alt="" />
+      <Partner />
     </div>
   );
 };

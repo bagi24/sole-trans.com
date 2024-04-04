@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 import international from "../../assets/საერთაშორისო-გადაზიდვები.jpg";
 import inline from "../../assets/shida gadazidva.jpg";
-import xmeleti from "../../assets/xmeleti.jpg";
-import img1 from "../../assets/165175338_1831237197041550_1991766929989696301_n.jpg";
+import brokerage from "../../assets/sole/ბროკერ.jpg";
+import loading from "../../assets/sole/loading-unloading-services.jpg";
 
 const Services = () => {
   return (
@@ -37,7 +37,7 @@ const Services = () => {
       >
         <div className="service">
           <div className="service-icon">
-            <img src={xmeleti} alt="Icon 2" />
+            <img src={loading} alt="Icon 2" />
           </div>
           <div className="service-details">
             <h3>ტვირთის დაცლა-დატვირთვის მომსახურება</h3>
@@ -72,7 +72,7 @@ const Services = () => {
       >
         <div className="service">
           <div className="service-icon">
-            <img src={inline} alt="Icon 3" />
+            <img src={brokerage} alt="Icon 3" />
           </div>
           <div className="service-details">
             <h3>საბროკერო მომსახურება</h3>

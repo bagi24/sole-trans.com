@@ -89,14 +89,15 @@ const Header = ({ onLanguageChange }) => {
           <Link className="link-style" to="/services/international">
             <li>{languages[language].navigation.International}</li>
           </Link>
-          <Link className="link-style" to="/services/terrestrial">
-            <li>{languages[language].navigation.Ground}</li>
-          </Link>
+
           <Link className="link-style" to="/services/internal">
             <li>{languages[language].navigation.Internal}</li>
           </Link>
           <Link className="link-style" to="/services/broker">
             <li>{languages[language].navigation.Brokerage}</li>
+          </Link>
+          <Link className="link-style" to="/services/terrestrial">
+            <li>{languages[language].navigation.Shipping}</li>
           </Link>
         </ul>
       )}

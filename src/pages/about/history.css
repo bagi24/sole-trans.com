@@ -1,0 +1,45 @@
+.company-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.img-con {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.img-con img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-con img:hover {
+  transform: scale(1.05);
+}
+
+.section {
+  flex: 2;
+}
+
+.title {
+  color: #4caf50;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+}

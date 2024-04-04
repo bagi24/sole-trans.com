@@ -8,6 +8,7 @@ import { useContext, useState } from "react";
 import { LanguageContext } from "../../contextApi/LanguageContext";
 import { languages } from "../../contextApi/LanguageData";
 import { Link } from "react-router-dom";
+import Footer from "../../components/footer/Footer";
 
 export const useLanguage = () => useContext(LanguageContext);
 
@@ -45,6 +46,7 @@ const Partners = () => {
           </Link>
         </ul>
       </div>
+      <Footer />
     </LanguageContext.Provider>
   );
 };
