@@ -1,7 +1,7 @@
 import React from "react";
 import "./international.css";
 import Header from "../../../components/header/Header";
-import Image from "../../../assets/int.jpg";
+import Image from "../../../assets/sole/all.jpg";
 import { useContext, useState } from "react";
 import { LanguageContext } from "../../../contextApi/LanguageContext";
 import { languages } from "../../../contextApi/LanguageData";
@@ -23,27 +23,53 @@ const International = () => {
         <div className="img-con">
           <img src={Image} />
         </div>
-
-        <div className="info-con">
-          <h1> International Export from Georgia</h1>
+        <div class="info-con">
+          <h1>საერთაშორისო სახმელეთო გადაზიდვა</h1>
           <p>
-            Exporting goods from Georgia involves several considerations
-            including optimal timing and cost-effective transportation routes.
-            The efficiency of the export process relies on two main components:
-            optimal timing of shipment and optimal cost of shipment.
+            <strong>SOLE-TRANS- </strong> ის გამართული ავტოპარკი, თქვენი ტვირთის
+            გადაზიდვას უზრუნველყოფს, როგორც შიდა, ისე საერთაშორისო მიმართულებით.
+            კომპანიის საერთაშორისო გადაზიდვები მოიცავს მთელ ევროპას და ცენტრალურ
+            აზიას. გთავაზობთ შიდა გადაზიდვების ფართო სპექტრს.ჩვენი გუნდი
+            მსოფლიოს ნებისმიერ წერტილში ორგანიზებას გაუწევს ტვირთების ხარისხიან,
+            სწრაფ და უსაფრთხო გადაზიდვას. ჩვენ გვენდობიან საქართველოში მსხვილი
+            იმპორტიორი კომპანიები.
           </p>
           <p>
-            It is crucial to ensure the optimal timing of shipment to facilitate
-            timely delivery and minimize costs associated with storage and
-            handling. Additionally, optimizing the cost of shipment involves
-            negotiating favorable rates and considering competitive pricing.
+            <strong> SOLE-TRANS-</strong>ის მოძრავი შემადგენლობა
+            დაკომპლექტებულია კომპანიის კუთვნილებაში არსებული თანამედროვე და
+            დაზღვეული ევრო სტანდარტის ავტოტრანსპორტით. ტექნიკურად გამართული და
+            მაღალი დონის ავტოპარკი კი სხვა კომპანიებთან მიმართებაში უპირატესობას
+            გვაძლევს ნებისმიერ დროს, შეუფერხებლად შემოგთავაზოთ თქვენთვის
+            სასურველი მომსახურეობა.
           </p>
-          <p>
-            When transporting goods, it's essential to minimize the risk of
-            damage during transit. Accurate information provided in
-            transportation documents helps address concerns at
-            regulatory/customs checkpoints.
-          </p>
+          <h2>ჩვენ გთავაზობთ:</h2>
+          <ul>
+            <li className="li">
+              ტვირთების გადაზიდვა „კარიდან -კარამდე“ პრინციპით;
+            </li>
+            <li className="li">
+              ავტოგადაზიდვა როგორც დიდი, ასევე ნაკრები, შერეული ტვირთის, (ADR)
+              ტვირთის, თავისი ლიცენზიით და სერტიფიკატებით;
+            </li>
+            <li className="li">
+              ვიღებთ პასუხისმგებლობას ტვირთის უსაფრთხოებაზე;
+            </li>
+            <li className="li">
+              თქვენი ტვირთი იქნება დაზღვეული მსოფლიოს ნებისიმერ წერტილში
+            </li>
+            <li className="li">
+              მომსახურების სტანდარტულ საფასურში ასევე შედის ტვირთის დეკლარირება
+              და განბაჟება
+            </li>
+            <li className="li">
+              ნებართვებისა და გაცილების ორგანიზება როგორც ადგილობრივი
+              გადაზიდვის, ასევე მთელი სატრანზიტო დერეფნის ჩათვლით
+            </li>
+            <li className="li">
+              ოპტიმალური სატრანსპორტო სქემების შემუშავება და შეკვეთების
+              შესრულების მინიმალური ვადები;
+            </li>
+          </ul>
         </div>
       </div>
 

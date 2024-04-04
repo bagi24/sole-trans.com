@@ -73,7 +73,7 @@ const Header = ({ onLanguageChange }) => {
                 value={language}
                 onChange={handleChange}
               >
-                <option value="ru">RU </option>
+                <option value="ge">GE </option>
                 <option value="en">EN</option>
               </select>
             </li>

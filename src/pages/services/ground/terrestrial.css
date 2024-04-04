@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section styling */
+.section {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.title {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Description styling */
+.description {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* List item styling */
+.li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 8px;
+  color: #555555;
+}
+
+/* List item bullet styling */
+.li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Change bullet color on hover */
+.li:hover::before {
+  color: #ff5733;
+}

@@ -12,17 +12,17 @@ export const languages = {
       Partners: "Partners",
     },
   },
-  ru: {
+  ge: {
     navigation: {
-      Services: "Сервис",
-      About: "Нас",
-      Contact: "Контакт",
-      International: "Международный",
-      Ground: "Наземный",
-      Internal: "Внутреннее",
-      Brokerage: "брокерская",
-      History: "История",
-      Partners: "партнеры",
+      Services: "სერვისი",
+      About: "ჩვენზე",
+      Contact: "კონტაქტი",
+      International: "საერთაშორისო",
+      Ground: "დაცლა-დატვირთვა",
+      Internal: "შიდა",
+      Brokerage: "საბროკერო",
+      History: "ისტორია",
+      Partners: "პარტნიორები",
     },
   },
 };

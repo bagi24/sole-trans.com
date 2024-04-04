@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section styling */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Info container styling */
+.info-con {
+  flex: 1;
+
+  margin-right: 20px;
+}
+
+/* Image container styling */
+.img-con {
+  flex: 1;
+  text-align: center;
+}
+
+/* Title styling */
+.title {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Description styling */
+.description {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+  width: 700px;
+}
